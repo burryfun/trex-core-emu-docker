@@ -11,7 +11,7 @@ docker build -t trex-core-emu .
 Config ipv4_profile.py and nginx_wget.py:  
 change mac and ip
 
-### Start traffic with client pool-ip [192.168.1.100-192.168.1.199]  
+### Start traffic for 100 clients  
 ```
 ./t-rex-64 -i --astf --emu
 ./trex-console --emu
