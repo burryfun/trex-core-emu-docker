@@ -5,7 +5,10 @@
 git clone https://github.com/burryfun/trex-core-emu-docker.git
 docker build -t trex-core-emu .
 ```
-
+## Start container
+```
+docker run --rm -it --net=host --privileged --cap-add=ALL -v /lib/modules:/lib/modules trex-core-emu
+```
 ## Usage  
 ### Test NGINX performance, tcp emulation  
 Config ipv4_profile.py and nginx_wget.py:  
