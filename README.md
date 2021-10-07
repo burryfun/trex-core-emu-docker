@@ -29,7 +29,6 @@ trex> start -f astf/nginx_wget.py -m 100
 ### PPPoE emulation  
 ```
 ./t-rex-64 -i --stl
-./trex-console
 ```
 ```
 python3 start_pppoe
