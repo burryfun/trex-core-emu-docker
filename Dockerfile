@@ -47,3 +47,4 @@ COPY tcp_emu/nginx_wget.py /usr/local/trex-core/scripts/astf
 WORKDIR /usr/local/trex-core/scripts
 
 RUN ln -s automation/trex_control_plane/interactive/trex/examples/stl/stl_pppoe_example.py start_pppoe
+RUN ln -s automation/trex_control_plane/interactive/trex/examples/stl/cfg/settings.ini settings.ini
