@@ -1,5 +1,8 @@
 FROM centos:8
 
+RUN sed -i -e '/^mirrorlist=http:\/\//d' -e 's/^# *baseurl=http:\/\/mirror.centos.org/baseurl=http:\/\/vault.centos.org/' /etc/yum.repos.d/CentOS-*.repo
+
+
 RUN yum update -y && yum upgrade -y && yum install -y \
     git \
     gcc-c++
